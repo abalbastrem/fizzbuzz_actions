@@ -1,0 +1,12 @@
+name: learning GitHub Actions
+on: push
+jobs:
+  run-code-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run linting
+        run: |
+          go fmt ./...
+          go vet ./...
+      - name: Run tests
+        run: go test

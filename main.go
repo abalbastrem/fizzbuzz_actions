@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	errNegativeNumber = errors.New("no negative numbers allowed")
+	errNegativeNumber = errors.New("ERROR: no negative numbers allowed")
 )
 
 func main() {

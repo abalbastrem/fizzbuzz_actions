@@ -10,10 +10,10 @@ jobs:
         uses: actions/setup-go@v5.0.0
         with:
           go-version: 1.21.3
-      - name: Set up Go mod
-        run: |
-          go mod init github.com/abalbastrem/fizzbuzz_actions
-          go mod tidy
+      # - name: Set up Go mod
+      #   run: |
+      #     go mod init github.com/abalbastrem/fizzbuzz_actions
+      #     go mod tidy
       - name: Run fmt
         run: go fmt ./...
       - name: Run vet

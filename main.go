@@ -15,7 +15,7 @@ const (
 )
 
 func main() {
-	fmt.Println("hello world")
+	fmt.Println("fizzbuzz actions")
 }
 
 type RuleSet struct {
